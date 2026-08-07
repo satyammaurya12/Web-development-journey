@@ -16,6 +16,8 @@ My daily  progress and projects in Web development.
   - Span
   - HTML entities
   - Iframe
+ - Day 6 : HTML Completed 
+   - Personal Portfolio
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
