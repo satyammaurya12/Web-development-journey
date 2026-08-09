@@ -16,8 +16,13 @@ My daily  progress and projects in Web development.
   - Span
   - HTML entities
   - Iframe
- - Day 6 : HTML Completed 
+- Day 6 : HTML Completed 
    - Personal Portfolio
+- Day 7 : CSS Introduction
+  - Inline CSS
+  - internal CSS
+  - External CSS
+
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
