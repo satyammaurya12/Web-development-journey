@@ -22,6 +22,12 @@ My daily  progress and projects in Web development.
   - Inline CSS
   - internal CSS
   - External CSS
+- Day 8 : Selectors
+  - Element Selectors
+  - class Selectors
+  - ID Selectors
+  - Universal Selectors
+  - Grouping Selectors
 
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
