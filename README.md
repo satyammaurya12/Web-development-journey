@@ -27,7 +27,12 @@ My daily  progress and projects in Web development.
   - class Selectors
   - ID Selectors
   - Universal Selectors
-  - Grouping Selectors
+  - Grouping Selectors.
+- Day 9 : Colors and Backgrounds
+  - Color names
+  - Background-color
+  - background-image
+  - background-position/repeat.
 
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
