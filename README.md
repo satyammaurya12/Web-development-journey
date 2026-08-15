@@ -33,6 +33,19 @@ My daily  progress and projects in Web development.
   - Background-color
   - background-image
   - background-position/repeat.
+- Day 10 : CSS Units & Typography
+  - px
+  - %
+  - em
+  - rem
+  - vw/vh
+  - calc()
+  - font-family
+  - font-size
+  - font-weight
+  - line-height
+  - text-align
+  - letter-spacing
 
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
