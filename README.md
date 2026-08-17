@@ -6,31 +6,31 @@ My daily  progress and projects in Web development.
 - Day 2 : Learned Markdown basics, including text formatting, links and ordered/unordered list.
 - Day 3 : HTML Media tags.
 - Day 4 :
-  - Table
-  - Forms
+  - table
+  - forms
   - input types
   - button.
 - Day 5 :
-  - Sementic Tags
-  - Div
-  - Span
-  - HTML entities
-  - Iframe
+  - sementic Tags
+  - div
+  - span
+  - hTML entities
+  - iframe
 - Day 6 : HTML Completed 
    - Personal Portfolio
 - Day 7 : CSS Introduction
-  - Inline CSS
+  - inline CSS
   - internal CSS
-  - External CSS
+  - external CSS
 - Day 8 : Selectors
-  - Element Selectors
+  - element Selectors
   - class Selectors
-  - ID Selectors
-  - Universal Selectors
-  - Grouping Selectors.
+  - iD Selectors
+  - universal Selectors
+  - grouping Selectors.
 - Day 9 : Colors and Backgrounds
-  - Color names
-  - Background-color
+  - color names
+  - background-color
   - background-image
   - background-position/repeat.
 - Day 10 : CSS Units & Typography
@@ -46,6 +46,17 @@ My daily  progress and projects in Web development.
   - line-height
   - text-align
   - letter-spacing
+- Day 11 : Text styling & Box Model
+  - text-transform
+  - text-decoration
+  - word-spacing
+  - text-shadow
+  - white-spacing basics
+  - content
+  - padding
+  - border
+  - margin
+  - box model calculation
 
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
