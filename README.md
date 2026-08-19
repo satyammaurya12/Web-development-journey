@@ -57,6 +57,16 @@ My daily  progress and projects in Web development.
   - border
   - margin
   - box model calculation
+- Day 12 : Box Sizing & Display
+  - box-sizing
+  - content-box
+  - border-box
+  - width/height behavior
+  - block
+  - inline
+  - inline-block
+  - none
+  - visibility
 
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
