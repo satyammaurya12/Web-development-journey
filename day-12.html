@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my creative space</title>
+    <Style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f7fb;
+            color: #222;
+        }
+        header{
+            display: block;
+            background-color: #243b55;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 5px solid #1abc9c;
+            margin-bottom: 20px;
+        }
+        /* header h1{
+            margin: 0 0 10px 0;
+        } */
+        nav{
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 25px;
+        }
+        nav a{
+            display:inline;
+            margin: 0 15px;
+            color: #243b55;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        .container{
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .intro{
+            background-color: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border: 2px solid #dce3ea;
+            border-radius: 12px;
+            text-align: center;
+
+        }
+       .intro h2{
+        margin-top: 0;
+       }
+       .card{
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+        min-height: 220px;
+        margin: 1.4%;
+        padding: 20px;
+        border: 2px solid #dce3ea;
+        border-radius: 12px;
+        background-color: white;
+        box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
+       }
+       .card h3{
+        margin-top: 0;
+       }
+       .card p{
+        line-height: 1.6;
+       }
+       .button{
+        display: inline-block;
+        padding: 10px 18px;
+        margin-top: 10px;
+        background-color: #1abc9c;
+        border-radius: 6px;
+       }
+       .skills{
+        display: flex;
+        justify-content: space-around;
+        gap: 15px;
+        background-color: #243b55 ;
+        padding: 25px;
+        margin: 30px 0;
+        border-radius: 12px;
+       }
+       .skill{
+        flex: 1;
+        padding: 20px;
+        border: 2px solid white;
+        text-align: center;
+        color: white;
+       }
+       .hidden-message{
+        display: none;
+       }
+       footer{
+        display: block;
+        text-align: center;
+        background-color: #182a3d ;
+        color: white;
+        padding: 20px;
+        margin-top: 30px;
+        
+       }
+
+
+    </Style>
+</head>
+
+<body>
+    <header>
+        <h1> My Creative Space</h1>
+        <p>Ideas, Skills and Creativity in one place</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <section class ="intro">
+            <h2> Welcome to My creative space</h2>
+            <p>Creativity is not jus about making something beautiful <br>
+                It is about turning simple ideas into something meaningful.
+            </p>
+            <a href="#" id="button">Explore more</a>
+        </section>
+        <section>
+            <div class="cards">
+                <h3>design</h3>
+                <p>I enjoy creating simple and attractive designs
+                    <br>that are easy to understand and pleasant to see.
+                </p>
+                <a href="#" class="button">Learn more </a>
+            </div>
+            <div class="card">
+                <h3>Coding</h3>
+                <p>Coding allows me to turn ideas into websites and interactive digital experiences.</p>
+                <a href="#" class="button">View Project </a>
+            </div>
+            <div class="card">
+                <h3>Learning</h3>
+                <p>Learning new things helps me improve my skills and discover new possibilities every day.</p>
+                <a href="#" class="button">Read More </a>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="skill">
+                <h3>HTML</h3>
+                <p>Building the structure of webpages.</p>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <p>making webpages beautiful and responsive.</p>
+            </div>
+            <div class="skill">
+                <h3>Creativity</h3>
+                <p>Turning ideas into interesting projects.</p>
+            </div>
+        </section>
+        <p class="hidden-message">
+            This content is hidden using display:none
+        </p>
+    </div>
+    <footer>
+        <p>&copy;2026 MY creative Space | keep Learning Keep Creating</p>
+    </footer>
+</body>
+
+</html>
