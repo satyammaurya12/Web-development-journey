@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Position & Z-Index</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+            overflow-x: hidden;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+
+            width: 100%;
+            min-height: 70px;
+
+            background: #0f172a;
+            color: white;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 15px 6%;
+
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #38bdf8;
+        }
+
+        .menu {
+            display: flex;
+            gap: 25px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            position: relative;
+
+            min-height: 500px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+
+            padding: 60px 20px;
+
+            background: linear-gradient(
+                135deg,
+                #0f172a,
+                #1e40af,
+                #0284c7
+            );
+
+            color: white;
+            overflow: hidden;
+        }
+        .circle1 {
+            position: absolute;
+
+            width: 220px;
+            height: 220px;
+
+            border-radius: 50%;
+
+            background: rgba(56, 189, 248, 0.25);
+
+            top: 30px;
+            left: -80px;
+
+            z-index: 1;
+        }
+
+        .circle2 {
+            position: absolute;
+
+            width: 300px;
+            height: 300px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 255, 255, 0.08);
+
+            right: -120px;
+            bottom: -120px;
+
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+
+            max-width: 750px;
+
+            z-index: 5;
+        }
+
+        .hero-content h1 {
+            font-size: clamp(35px, 6vw, 60px);
+
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 span {
+            color: #38bdf8;
+        }
+
+        .hero-content p {
+            font-size: clamp(15px, 2vw, 19px);
+
+            line-height: 1.7;
+
+            color: #dbeafe;
+        }
+
+        .btn {
+            display: inline-block;
+
+            margin-top: 30px;
+
+            padding: 14px 28px;
+
+            background: #38bdf8;
+            color: #082f49;
+
+            text-decoration: none;
+
+            border-radius: 30px;
+
+            font-weight: bold;
+        }
+        .section {
+            padding: 70px 6%;
+
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: clamp(28px, 4vw, 38px);
+
+            margin-bottom: 12px;
+        }
+
+        .section > p {
+            color: #64748b;
+
+            margin-bottom: 45px;
+        }
+        .cards {
+            display: grid;
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+
+            gap: 25px;
+
+            max-width: 1100px;
+
+            margin: auto;
+        }
+
+        .card {
+            position: relative;
+
+            background: white;
+
+            padding: 35px 25px;
+
+            border-radius: 20px;
+
+            min-height: 280px;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .badge {
+            position: absolute;
+
+            top: -10px;
+            right: 20px;
+
+            background: #ef4444;
+
+            color: white;
+
+            padding: 7px 14px;
+
+            border-radius: 20px;
+
+            font-size: 12px;
+            font-weight: bold;
+
+            z-index: 2;
+        }
+
+        .icon {
+            font-size: 50px;
+
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #64748b;
+
+            line-height: 1.6;
+        }
+
+        .z-demo {
+            position: relative;
+
+            width: min(90%, 600px);
+
+            height: 300px;
+
+            margin: 50px auto;
+
+            background: #cbd5e1;
+
+            border: 3px solid #94a3b8;
+
+            border-radius: 20px;
+            overflow: hidden;
+        }
+
+
+        .box1 {
+            position: absolute;
+
+            width: 45%;
+            height: 180px;
+
+            top: 40px;
+            left: 10%;
+
+            background: #f97316;
+
+            border-radius: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+
+            font-weight: bold;
+
+            z-index: 1;
+        }
+
+
+        .box2 {
+            position: absolute;
+
+            width: 45%;
+            height: 180px;
+
+            top: 80px;
+            left: 45%;
+
+            background: #2563eb;
+
+            border-radius: 20px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+
+            font-weight: bold;
+
+            z-index: 2;
+        }
+
+        .help-button {
+            position: fixed;
+
+            right: 20px;
+            bottom: 20px;
+
+            width: 55px;
+            height: 55px;
+
+            border-radius: 50%;
+
+            background: #2563eb;
+
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            font-size: 24px;
+
+            box-shadow:
+                0 5px 20px rgba(0, 0, 0, 0.25);
+
+            z-index: 2000;
+        }
+
+        footer {
+            background: #0f172a;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 35px 20px;
+        }
+
+        @media (max-width: 600px) {
+
+            .navbar {
+                flex-direction: column;
+
+                gap: 12px;
+
+                padding: 15px;
+            }
+
+            .menu {
+                gap: 15px;
+            }
+
+            .menu a {
+                font-size: 14px;
+            }
+
+            .hero {
+                min-height: 450px;
+            }
+
+            .circle1 {
+                width: 150px;
+                height: 150px;
+
+                left: -70px;
+            }
+
+            .circle2 {
+                width: 200px;
+                height: 200px;
+
+                right: -90px;
+                bottom: -80px;
+            }
+
+            .section {
+                padding: 55px 20px;
+            }
+
+            .z-demo {
+                height: 260px;
+            }
+
+            .box1,
+            .box2 {
+                height: 150px;
+            }
+
+            .box1 {
+                top: 35px;
+                left: 5%;
+            }
+
+            .box2 {
+                top: 75px;
+                left: 40%;
+            }
+
+            .help-button {
+                width: 50px;
+                height: 50px;
+
+                right: 15px;
+                bottom: 15px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            CSS<span>Lab</span>
+        </div>
+
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#position">Position</a>
+            <a href="#zindex">Z-Index</a>
+        </div>
+
+    </nav>
+
+    <section class="hero" id="home">
+
+        <div class="circle1"></div>
+
+        <div class="circle2"></div>
+
+        <div class="hero-content">
+
+            <h1>
+                CSS <span>Position</span>
+            </h1>
+
+            <p>
+                Learn Static, Relative, Absolute,
+                Fixed and Sticky positioning with
+                Z-Index and Overflow.
+            </p>
+
+            <a href="#position" class="btn">
+                Explore
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="section" id="position">
+
+        <h2>CSS Position Types</h2>
+
+        <p>
+            Important position properties used in CSS
+        </p>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <div class="badge">
+                    RELATIVE
+                </div>
+
+                <div class="icon">📦</div>
+
+                <h3>Relative</h3>
+
+                <p>
+                    The element remains in its normal
+                    position and can be moved using
+                    top, right, bottom and left.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="badge">
+                    ABSOLUTE
+                </div>
+
+                <div class="icon">🎯</div>
+
+                <h3>Absolute</h3>
+
+                <p>
+                    The element is positioned relative
+                    to its nearest positioned parent.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="badge">
+                    FIXED
+                </div>
+
+                <div class="icon">📌</div>
+
+                <h3>Fixed</h3>
+
+                <p>
+                    The element stays fixed relative
+                    to the browser window during scrolling.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <div class="badge">
+                    STICKY
+                </div>
+
+                <div class="icon">🔒</div>
+
+                <h3>Sticky</h3>
+
+                <p>
+                    The element behaves normally until
+                    it reaches its sticky position.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section" id="zindex">
+
+        <h2>Z-Index Example</h2>
+
+        <p>
+            Higher z-index comes in front of lower z-index
+        </p>
+
+
+        <div class="z-demo">
+
+            <div class="box1">
+                Orange Box<br>
+                z-index: 1
+            </div>
+
+            <div class="box2">
+                Blue Box<br>
+                z-index: 2
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="help-button">
+        ?
+    </div>
+
+    <footer>
+
+        <h3>CSS Position & Z-Index</h3>
+
+        <br>
+
+        <p>
+            HTML + CSS Only
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
