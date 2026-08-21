@@ -67,6 +67,16 @@ My daily  progress and projects in Web development.
   - inline-block
   - none
   - visibility
+- Day 13 : Position and z-index & Overflow
+  - static
+  - relative
+  - absolute
+  - flxed
+  - sticky
+  - z-index
+  - stacking basics
+  - overflow:hidden/auto/scroll
+  - position revision
 
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
