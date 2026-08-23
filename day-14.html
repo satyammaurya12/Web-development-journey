@@ -1,0 +1,276 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+        }
+
+        header {
+            background: #1e293b;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            position: relative;
+        }
+
+        .logo::after {
+            content: "";
+            width: 8px;
+            height: 8px;
+            background: #38bdf8;
+            border-radius: 50%;
+            position: absolute;
+            right: -14px;
+            bottom: 5px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 16px;
+            position: relative;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background: #38bdf8;
+            left: 0;
+            bottom: -6px;
+            transition: 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .hero {
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #dbeafe, #f0f9ff);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .hero h1::before {
+            content: "✦";
+            color: #0ea5e9;
+            position: absolute;
+            left: -40px;
+            top: -10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 30px;
+            background: #0284c7;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0369a1;
+            transform: translateY(-3px);
+        }
+
+        .cards {
+            padding: 70px 8%;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            width: 300px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            position: relative;
+            transition: 0.3s;
+        }
+
+        .card::before {
+            content: "";
+            position: absolute;
+            width: 5px;
+            height: 0;
+            background: #0284c7;
+            left: 0;
+            top: 0;
+            border-radius: 12px 0 0 12px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card:hover::before {
+            height: 100%;
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            color: #0f172a;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #64748b;
+        }
+
+        .contact {
+            padding: 60px 20px;
+            text-align: center;
+            background: #e0f2fe;
+        }
+
+        .contact h2 {
+            margin-bottom: 25px;
+        }
+
+        input {
+            padding: 13px;
+            width: 280px;
+            border: 2px solid #cbd5e1;
+            border-radius: 7px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #0284c7;
+            box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e293b;
+            color: white;
+        }
+
+        footer::before {
+            content: "© ";
+            color: #38bdf8;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .hero h1::before {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">MyWebsite</div>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div>
+            <h1>Welcome to My Website</h1>
+            <p>
+                Yeh ek modern responsive website hai jisme internal CSS,
+                pseudo-classes aur pseudo-elements ka use kiya gaya hai.
+            </p>
+            <a href="#" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <section class="cards">
+        <div class="card">
+            <h2>Web Design</h2>
+            <p>Modern aur attractive websites banane ke liye creative design techniques ka use.</p>
+        </div>
+
+        <div class="card">
+            <h2>Development</h2>
+            <p>HTML aur CSS ke through clean aur responsive web pages create kiye ja sakte hain.</p>
+        </div>
+
+        <div class="card">
+            <h2>Responsive</h2>
+            <p>Website mobile, tablet aur desktop devices par properly work karti hai.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <input type="text" placeholder="Enter your name">
+        <br>
+        <a href="#" class="btn">Submit</a>
+    </section>
+
+    <footer>
+        2026 MyWebsite
+    </footer>
+
+</body>
+</html>
+```
