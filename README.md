@@ -77,6 +77,17 @@ My daily  progress and projects in Web development.
   - stacking basics
   - overflow:hidden/auto/scroll
   - position revision
+- Day 14 : Pseudo-classes & pseudo-Element
+  - hover
+  - focus
+  - active
+  - visited
+  - nth-child()
+  - first-child/last-child
+  - ::before
+  - ::after
+  - ::first-letter
+  - ::selection
 
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
