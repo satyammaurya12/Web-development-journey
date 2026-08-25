@@ -88,6 +88,12 @@ My daily  progress and projects in Web development.
   - ::after
   - ::first-letter
   - ::selection
+- Day 15 : Flexbox Basics
+  - display: flex
+  - flex container
+  - main axis
+  - cross axis
+  - flex-direction
 
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
