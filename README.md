@@ -94,6 +94,15 @@ My daily  progress and projects in Web development.
   - main axis
   - cross axis
   - flex-direction
+- Day 16 : Flexbox Alignment & Flexbox Properties
+  - justify-content
+  - align-items
+  - align-content
+  - gap
+  - flex-direction
+  - flex-wrap
+  - gap
+  - row/column layouts
 
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
