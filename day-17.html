@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox Practice</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color : white;
+            padding: 18px 40px;
+            background-color: black;
+        }
+        nav h2 {
+            color: #00d4ff;
+        }
+        .menu{
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+        .menu li{
+            cursor: pointer;
+        }
+        .hero{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 280px;
+            padding: 30px;
+        }
+        .hero-content h1{
+            font-size: 42px;
+            color: #222;
+            margin-bottom: 12px;
+        }
+        .hero-content p{
+            color : #666;
+            margin-bottom: 20px;
+        }
+        .hero-content a{
+            color: white;
+        }
+        .btn{
+            display: inline-block;
+            background: #00a8cc;
+            border-radius: 25px;
+            text-decoration: none;
+            padding: 9px 22px;
+        }
+        .cards{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 30px;
+           
+        }
+        .card{
+            background-color: white;
+            width: 250px;
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px  #ccc;
+             transition: 0.4s;
+        }
+        .card:hover{
+            color: black;
+            transform: translateY(-6px);
+            box-shadow: 0 5px 15px blueviolet;
+            background:linear-gradient(to right, rgb(13, 162, 243), white);
+            
+        }
+        .card h3
+        {
+            color: #00a8cc;
+            margin-bottom: 10px;
+        }
+        .card p{
+            color: #666;
+            line-height: 1.5;
+        }
+        li{
+            transition: 0.5s;
+        }
+        li:hover{
+            background-color: white;
+            color: black;
+            border-radius: 9px;
+            padding: 5px;
+            transform: translateY(-4px);
+           
+        }
+        footer{
+            text-align: center;
+            background-color: #222;
+            color: white;
+            padding: 15px;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h2> flexbox practice </h2>
+        <ul class="menu">
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+    <section class="hero">
+        <div class="hero-content">
+            <h1> Learn Flexbox </h1>
+            <p>Create a beautiful and responsive layouts easily.</p>
+            <a href="#" class="btn">Explore now </a>
+        </div>
+    </section>
+    <section class="cards">
+        <div class="card">
+            <h3>Flex item</h3>
+            <p>flexbox helps to arrange element in rows and column.</p>
+        </div>
+        <div class="card">
+            <h3> Flex item 2</h3>
+            <p>Use justify-content and align-items to control layout.</p>
+        </div>
+        <div class="card">
+            <h3>Flex item 3</h3>
+            <p> flexbox makes responsive webpage design much easier.</p>
+        </div>
+    </section>
+    <footer>
+        &copy; 2026 flex web | CSS flexbox Project
+    </footer>
+</body>
+</html>
