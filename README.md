@@ -103,6 +103,17 @@ My daily  progress and projects in Web development.
   - flex-wrap
   - gap
   - row/column layouts
+- Day 17 : Flexbox items & Flexbox Project
+  - flex-grow
+  - flex-shink
+  - flex-basis
+  - order
+  - align-self
+  - navbar
+  - hero section
+  - cards
+  - footer
+  - responsive flex layout
 
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
