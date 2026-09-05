@@ -114,6 +114,15 @@ My daily  progress and projects in Web development.
   - cards
   - footer
   - responsive flex layout
+- Day 18 : CSS Grid Basics & Grid Layout
+  - display:grid
+  - grid columns
+  - grid rows
+  - gap
+  - grid-template-columns
+  - grid-template-rows
+  - fr unit
+  - repeat()
 
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
