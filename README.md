@@ -123,6 +123,15 @@ My daily  progress and projects in Web development.
   - grid-template-rows
   - fr unit
   - repeat()
+- Day 19 : Grid Positioning & Advanced Grid
+  - grid-column
+  - grid-row
+  - span
+  - grid-area bascis
+  - minmax()
+  - auto-fit
+  - auto-fill
+  - responsive grids
 
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
