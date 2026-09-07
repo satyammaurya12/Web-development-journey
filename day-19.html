@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GridFlow | CSS Grid</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1020;
+            color: white;
+            min-height: 100vh;
+        }
+
+
+        header {
+            padding: 35px 7%;
+            text-align: center;
+            background: linear-gradient(135deg, #171d3d, #10182d);
+        }
+
+        header h1 {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            margin-bottom: 8px;
+        }
+
+        header h1 span {
+            color: #8b7cff;
+        }
+
+        header p {
+            color: #aeb6ca;
+        }
+
+
+        .grid-container {
+            width: min(1100px, 90%);
+            margin: 30px auto;
+
+            display: grid;
+
+            /* minmax() */
+            grid-template-columns:
+                repeat(4, minmax(120px, 1fr));
+
+            grid-auto-rows: 150px;
+            gap: 15px;
+        }
+
+        .card {
+            display: grid;
+            place-items: center;
+            text-align: center;
+
+            padding: 20px;
+            border-radius: 18px;
+
+            background: #151d35;
+            border: 1px solid #303b5c;
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #8b7cff;
+            box-shadow: 0 12px 30px #0005;
+        }
+
+        .card h2 {
+            color: #a69eff;
+            margin-bottom: 5px;
+        }
+
+        .card p {
+            color: #9ca6bc;
+            font-size: 14px;
+        }
+
+
+
+        .column {
+            grid-column: 1 / 3;
+        }
+
+        .row {
+            grid-row: span 2;
+        }
+
+
+
+        .span {
+            grid-column: span 2;
+        }
+
+
+
+        .area {
+            grid-area: 2 / 3 / 4 / 5;
+        }
+
+
+
+        .features {
+            width: min(1100px, 90%);
+            margin: 50px auto;
+
+            display: grid;
+
+
+            grid-template-columns:
+                repeat(auto-fit, minmax(200px, 1fr));
+
+            gap: 15px;
+        }
+
+        .feature {
+            padding: 22px;
+            border-radius: 16px;
+            background: #11182d;
+            border: 1px solid #293653;
+        }
+
+        .feature strong {
+            color: #8b7cff;
+            font-size: 25px;
+        }
+
+        .feature h3 {
+            margin: 8px 0;
+        }
+
+        .feature p {
+            color: #929db5;
+            font-size: 14px;
+        }
+
+
+
+        .auto-fill {
+            width: min(1100px, 90%);
+            margin: 50px auto;
+
+            display: grid;
+
+
+            grid-template-columns:
+                repeat(auto-fill, minmax(140px, 1fr));
+
+            gap: 12px;
+        }
+
+        .tag {
+            padding: 15px;
+            text-align: center;
+            border-radius: 12px;
+            background: #1a2340;
+            color: #c5c9ff;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+            color: #737e98;
+            border-top: 1px solid #202a44;
+        }
+
+
+
+        @media (max-width: 700px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .column {
+                grid-column: 1 / 3;
+            }
+
+            .row {
+                grid-row: span 1;
+            }
+
+            .span {
+                grid-column: span 1;
+            }
+
+            .area {
+                grid-area: auto;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                grid-auto-rows: auto;
+            }
+
+            .column,
+            .span {
+                grid-column: auto;
+            }
+
+            .card {
+                min-height: 130px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Grid<span>Flow</span></h1>
+        <p>Modern layouts made simple with CSS Grid.</p>
+    </header>
+    <main class="grid-container">
+
+        <div class="card column">
+            <div>
+                <h2>grid-column</h2>
+                <p>Controls an item's horizontal position.</p>
+            </div>
+        </div>
+
+        <div class="card row">
+            <div>
+                <h2>grid-row</h2>
+                <p>Controls vertical positioning.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div>
+                <h2>span</h2>
+                <p>Occupy multiple grid tracks.</p>
+            </div>
+        </div>
+
+        <div class="card span">
+            <div>
+                <h2>span 2</h2>
+                <p>This card covers two columns.</p>
+            </div>
+        </div>
+        <div class="card area">
+            <div>
+                <h2>grid-area</h2>
+                <p>Position elements using grid lines.</p>
+            </div>
+        </div>
+
+    </main>
+    <section class="features">
+
+        <div class="feature">
+            <strong>01</strong>
+            <h3>minmax()</h3>
+            <p>Creates flexible tracks with minimum and maximum sizes.</p>
+        </div>
+        <div class="feature">
+            <strong>02</strong>
+            <h3>auto-fit</h3>
+            <p>Fits as many columns as possible into available space.</p>
+        </div>
+        <div class="feature">
+            <strong>03</strong>
+            <h3>auto-fill</h3>
+            <p>Creates as many grid tracks as the container can hold.</p>
+        </div>
+        <div class="feature">
+            <strong>04</strong>
+            <h3>Responsive</h3>
+            <p>The layout automatically adapts to different screens.</p>
+        </div>
+    </section>
+    <section class="auto-fill">
+
+        <div class="tag">Flexible</div>
+        <div class="tag">Responsive</div>
+        <div class="tag">Modern</div>
+        <div class="tag">Clean</div>
+        <div class="tag">Adaptive</div>
+        <div class="tag">Powerful</div>
+
+    </section>
+    <footer>
+        © 2026 GridFlow • Built with CSS Grid
+    </footer>
+
+</body>
+
+</html>
