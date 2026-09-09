@@ -14,7 +14,7 @@ My daily  progress and projects in Web development.
   - sementic Tags
   - div
   - span
-  - hTML entities
+  - HTML entities
   - iframe
 - Day 6 : HTML Completed 
    - Personal Portfolio
@@ -132,6 +132,15 @@ My daily  progress and projects in Web development.
   - auto-fit
   - auto-fill
   - responsive grids
+- Day 20 : Responsive Design & Responsive Layout
+  - media queries
+  - mobile-first approach
+  - breakpoints
+  - flexible widths
+  - responsive images
+  - flexible containers
+  - responsive typography
+  - navbar adaptation
 
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
