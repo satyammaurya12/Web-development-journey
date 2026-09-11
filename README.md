@@ -141,7 +141,17 @@ My daily  progress and projects in Web development.
   - flexible containers
   - responsive typography
   - navbar adaptation
-
+- Day 21 : Transitions, Transforms & CSS Animations
+  - transition
+  - transform
+  - scale
+  - rotate
+  - translate
+  - @keyframes
+  - animation-duration
+  - delay
+  - iteration-count
+  - timing basics
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
