@@ -152,6 +152,8 @@ My daily  progress and projects in Web development.
   - delay
   - iteration-count
   - timing basics
+- Day 22 : HTML Completed
+  - Brew House
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
