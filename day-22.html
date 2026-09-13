@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Hourse</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fffaf5;
+        }
+
+        header {
+            width: 100%;
+            padding: 22px 8%;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            font-size: 25px;
+        }
+
+        nav h2 span {
+            color: #a65f35;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4d3930;
+            font-size: 15px;
+        }
+
+        .nav-links a:hover {
+            color: #a65f35;
+        }
+
+        button {
+            border: none;
+            cursor: pointer;
+        }
+
+        .nav-btn {
+            padding: 11px 20px;
+            border-radius: 25px;
+            background: #2b1b14;
+            color: white;
+        }
+
+        .hero {
+            min-height: 550px;
+            padding: 60px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 550px;
+        }
+
+        .tag,
+        .small-title {
+            color: #a65f35;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 6vw, 75px);
+            line-height: 1.05;
+            margin-bottom: 25px;
+        }
+        .text{
+            max-width: 450px;
+            color: #76665e;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+        .hero-btn{
+            padding: 15px 25px;
+            border-radius: 30px;
+            background: #a65f35;
+            color: white;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+        .hero-btn:hover{
+            transform: translateY(-4px);
+        }
+        .coffee{
+            width: 330px;
+            height: 330px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #e8c8ad,#a65f35);
+        }
+        .cup{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fffaf5;
+            font-size: 90px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        .menu{
+            padding: 70px 8%;
+            text-align: center;
+            background: #f5ebe3;
+        }
+        .menu h2{
+            font-size: 38px;
+            margin-bottom: 40px;
+        }
+        .cards{
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+        .card{
+            width: 280px;
+            padding: 30px 25px;
+            background: white;
+            border-radius: 18px;
+            text-align: left;
+            transition: 0.3s;
+        }
+        .card:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+        }
+        .icon{
+            font-size: 45px;
+            margin-bottom: 18px;
+        }
+        .card h3{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .card p{
+            color: #76665e;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+        .card strong{
+            color: #a65f35;
+            font-size: 18px;
+        }
+
+        @media (max-width:800px) {
+            .nav-links{
+                display: none;
+
+            }
+            .hero{
+                flex-direction: column;
+                text-align: center;
+                gap: 50px;
+            }
+            .text{
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .coffee{
+                width: 160px;
+                height: 160px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2>Brew <span>House</span></h2>
+            <div class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Menu</a>
+                <a href="#">Contact</a>
+            </div>
+            <button class="nav-btn">Order now</button>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <p class="tag">FRESHLY BREWED EVERYDAY </p>
+                <h1>Your Perfect Cup <br>Starts Here.</h1>
+                <p class="text">Discover rich flavors, freshly roasted beans, and delicious moments at Brew Hourse </p>
+                <button class="hero-btn">Explore Our Menu</button>
+            </div>
+            <div class="coffee">
+                <div class="cup">
+                    ☕
+                </div>
+            </div>
+        </section>
+        <section class="menu">
+            <p class="small-title">Our Favorites</p>
+            <h2>Popular Drinks</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="icon">☕</div>
+                    <h3>Classic Latte</h3>
+                    <p>Espresso with smooth steamed milk.</p>
+                    <strong>149RS</strong>
+                </div>
+                <div class="card">
+                    <div class="icon">🍵</div>
+                    <h3>Green Tea</h3>
+                    <p>Refreshing tea with a natural flavor.</p>
+                    <strong>99RS</strong>
+                </div>
+                <div class="card">
+                    <div class="icon">🥤</div>
+                    <h3>Cold Coffee</h3>
+                    <p>Chilled coffee with chreamy foam.</p>
+                    <strong>169RS</strong>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
