@@ -158,6 +158,15 @@ My daily  progress and projects in Web development.
   - Introduction to Javascript
   - variables
   - datatype & object
+- Day 24 : Conditional & Loops
+  - if
+  - else if
+  - else if ladder
+  - while
+  - do while
+  - for
+  - for in
+  - for of
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
