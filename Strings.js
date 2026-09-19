@@ -1,0 +1,16 @@
+let myname = "satyam maurya";
+console.log("Length" + myname.length);
+console.log("Uppercase: " + myname.toUpperCase());
+console.log("Lowercase: " + myname.toLowerCase());
+console.log("Character: " + myname.charAt(0));
+console.log("Position of M: " + myname.indexOf("M"));
+console.log("Slice: ", myname.slice(0, 6));
+console.log("Includes last name:", myname.includes("maurya"));
+console.log("Replace: ", myname.replace("satyam", "maurya",));
+let text = "hello    javascript    ";
+console.log("Trim", text.trim());
+let fruits = "Apple,Mango,Banana";
+console.log("Split: ", fruits.split(","));
+let firstName = "Satyam";
+let lastName = "Maurya";
+console.log("Full Name", firstName + " " + lastName);
