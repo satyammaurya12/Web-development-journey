@@ -167,6 +167,9 @@ My daily  progress and projects in Web development.
   - for
   - for in
   - for of
+- Day 25
+  - Functions
+  - Strings in Javascript
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
