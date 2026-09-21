@@ -170,6 +170,8 @@ My daily  progress and projects in Web development.
 - Day 25
   - Functions
   - Strings in Javascript
+- Day 26
+  - Array
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
