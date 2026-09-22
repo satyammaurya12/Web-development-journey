@@ -172,6 +172,7 @@ My daily  progress and projects in Web development.
   - Strings in Javascript
 - Day 26
   - Array
+- Day 27 : Document Object Model
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
