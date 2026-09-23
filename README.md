@@ -173,6 +173,9 @@ My daily  progress and projects in Web development.
 - Day 26
   - Array
 - Day 27 : Document Object Model
+- Day 28 :
+  - Selecting by ID's Classes and more
+  - Inserting and Removing element using JS
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
