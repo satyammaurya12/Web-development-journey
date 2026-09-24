@@ -176,6 +176,11 @@ My daily  progress and projects in Web development.
 - Day 28 :
   - Selecting by ID's Classes and more
   - Inserting and Removing element using JS
+- Day 29 :
+  - Event
+  - Event Bubbling
+  - Set Interval
+  - Set Timeout in Javascript
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
