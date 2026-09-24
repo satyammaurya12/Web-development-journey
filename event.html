@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript practice</title>
+</head>
+
+<body>
+    <h1> javascript event practice</h1>
+    <div class="box">
+        <h2>event bubbling</h2>
+        <button id="childBtn">click me </button>
+    </div>
+    <hr>
+    <h2>setTimeout</h2>
+    <button id="timeoutBtn"> Show message after 3 second</button>
+    <p id="message"></p>
+    <hr>
+    <h2>setInterval</h2>
+    <div id="timer">0</div>
+    <button id="startBtn">start</button>
+    <button id="stopBtn">Stop</button>
+    <button id="resetBtn">reset</button>
+    <hr>
+    <h2>Event Delegation</h2>
+    <ul id="list">
+        <li>Javascript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>React</li>
+    </ul>
+    <script>
+        const childBtn = document.querySelector("#childBtn");
+        childBtn.addEventListener("click", function (){
+            console.log("Button clicked");
+        });
+        const box = document.querySelector("#box");
+        box.addEventListener("click", function(){
+            console.log("box clicked");
+        });
+        childBtn.addEventListener("click", function(){
+            console.log("Button clicked again");
+        });
+        const timeoutBtn= document.querySelector("#timeoutBtn");
+        const message = document.querySelector("#message");
+        timeoutBtn.addEventListener("click", function(){
+            message.innerText = "wait.......";
+            setTimeout(function(){
+                message.innerText = "3 second complete!";
+            },3000);
+        });
+        const timer = document.querySelector("#timer");
+        const startBtn = document.querySelector("startBtn");
+        const stopBtn = document.querySelector("#stopBtn");
+        const resetBtn = document.querySelector("#resetBtn");
+        let count = 0;
+        let intervalId = null;
+        startBtn.addEventListener("click", function(){
+            if (intervalId !==null){
+                return;
+            }
+            intervalId = setInterval(function(){
+                count++;
+                timer.innerText = count;
+            },1000);
+        });
+        stopBtn.addEventListener("click",function(){
+            clearInterval(intervalId);
+            intervalId = null;
+        });
+        resetBtn.addEventListener("click", function(){
+            clearInterval(intervalId);
+            intervalId = null;
+            count = 0;
+            timer.innerText = count;
+        });
+        const list = document.querySelector("#list");
+        list.addEventListener("click", function(event){
+            if(event.target.tagname ==="LI"){
+                console.log("you clicked:", event.target.innerText);
+                event.target.style.textDecoration = "line-through";
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
