@@ -184,6 +184,10 @@ My daily  progress and projects in Web development.
 - Day 30 :
   - Asyne/Await
   - Fetch API in JS
+- Day 31 :
+  - Try-Catch
+  - Throw
+  - Finally in JS
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
