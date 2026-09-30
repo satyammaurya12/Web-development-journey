@@ -188,6 +188,8 @@ My daily  progress and projects in Web development.
   - Try-Catch
   - Throw
   - Finally in JS
+- Day 32 :
+  - Classes & Objects in javascript
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
