@@ -190,6 +190,14 @@ My daily  progress and projects in Web development.
   - Finally in JS
 - Day 32 :
   - Classes & Objects in javascript
+- Day 33 : Advance Javascript
+  - Spread Operator
+  - Destructuring
+  - IIFE (Immediately Invoked Function Expression)
+  - Spread syntax
+  - Local global & block scopes
+  - Hoisting
+  - Hoisting with let and var
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
