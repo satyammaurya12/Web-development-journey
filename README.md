@@ -198,6 +198,9 @@ My daily  progress and projects in Web development.
   - Local global & block scopes
   - Hoisting
   - Hoisting with let and var
+- Day 34 :
+  - Common.js
+  -  Ecmascript module
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
