@@ -1,0 +1,4 @@
+Name: satyam
+course: node.js
+topic: file System
+Day 1 : fs and path completed
