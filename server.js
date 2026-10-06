@@ -1,11 +1,16 @@
 const express = require("express");
-const bookRoutes = require("./routes/bookRoutes");
-const server = express();
-server.use(express.json());
-server.get("/",(req,res)=>{
-    res.send("Book Store API is running");
+const logger = require("./middleware/logger");
+const app = express();
+app.use(logger);
+app.get("/", (req, res) => {
+    res.send("hello world");
 });
-server.use("/books",bookRoutes);
-server.listen(3000,()=>{
+app.get("/about", (req, res) => {
+    res.send("About Page");
+});
+app.listen(3000, () => {
     console.log("Server running on http://localhost:3000");
 });
+
+
+
