@@ -209,6 +209,8 @@ My daily  progress and projects in Web development.
   - Request & Response
 - Day 37 :
   - Response, Request and Routers in Express.
+- Day 38 :
+  - Middleware in Express.js
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
