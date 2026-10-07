@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <h1><%= title %></h1>
+
+  <h2>Add Student</h2>
+
+  <form action="/student" method="post">
+
+    <input
+      type="text"
+      name="name"
+      placeholder="Student name"
+      required
+    >
+
+    <input
+      type="number"
+      name="age"
+      placeholder="Age"
+      required
+    >
+
+    <input
+      type="text"
+      name="course"
+      placeholder="Course"
+      required
+    >
+
+    <input
+      type="number"
+      name="marks"
+      placeholder="Marks"
+      required
+    >
+
+    <button type="submit">Add Student</button>
+
+  </form>
+
+  <hr>
+
+  <h2>Student List</h2>
+
+  <% if (students.length === 0) { %>
+
+    <p>No students found.</p>
+
+  <% } else { %>
+
+    <% students.forEach((student, index) => { %>
+
+      <div class="student">
+
+        <h3>
+          <%= index + 1 %>. <%= student.name %>
+        </h3>
+
+        <p>Age: <%= student.age %></p>
+
+        <p>Course: <%= student.course %></p>
+
+        <p>Marks: <%= student.marks %></p>
+
+        <% if (student.marks >= 80) { %>
+
+          <p class="good">Excellent!</p>
+
+        <% } else if (student.marks >= 60) { %>
+
+          <p class="average">Good!</p>
+
+        <% } else { %>
+
+          <p class="low">Needs Improvement</p>
+
+        <% } %>
+
+      </div>
+
+    <% }) %>
+
+  <% } %>
+
+  <br>
+
+  <a href="/">Go Home</a>
+
+</body>
+</html>
