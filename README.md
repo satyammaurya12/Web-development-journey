@@ -216,6 +216,8 @@ My daily  progress and projects in Web development.
 - Day 40 :
   - Introduction to mongoDB
   - CRUD operation in mongoDB
+- Day 41 :
+  - Insalling Mongoose & using it with Express.js
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
