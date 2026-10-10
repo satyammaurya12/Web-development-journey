@@ -1,17 +1,14 @@
 {
-  "name": "mongoose-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "tailwind-practice",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "express": "^5.3.0",
-    "mongoose": "^9.11.1"
+  "devDependencies": {
+    "vite": "^8.3.0"
   }
 }
