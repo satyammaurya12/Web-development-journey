@@ -218,6 +218,8 @@ My daily  progress and projects in Web development.
   - CRUD operation in mongoDB
 - Day 41 :
   - Insalling Mongoose & using it with Express.js
+- Day 42 :
+  - Tailwind CSS
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
