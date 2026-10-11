@@ -1,16 +1,228 @@
+# Web-development-journey
+My daily  progress and projects in Web development.
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## progress
+- Day 1 : Created a simple Web page.
+- Day 2 : Learned Markdown basics, including text formatting, links and ordered/unordered list.
+- Day 3 : HTML Media tags.
+- Day 4 :
+  - table
+  - forms
+  - input types
+  - button.
+- Day 5 :
+  - sementic Tags
+  - div
+  - span
+  - HTML entities
+  - iframe
+- Day 6 : HTML Completed 
+   - Personal Portfolio
+- Day 7 : CSS Introduction
+  - inline CSS
+  - internal CSS
+  - external CSS
+- Day 8 : Selectors
+  - element Selectors
+  - class Selectors
+  - iD Selectors
+  - universal Selectors
+  - grouping Selectors.
+- Day 9 : Colors and Backgrounds
+  - color names
+  - background-color
+  - background-image
+  - background-position/repeat.
+- Day 10 : CSS Units & Typography
+  - px
+  - %
+  - em
+  - rem
+  - vw/vh
+  - calc()
+  - font-family
+  - font-size
+  - font-weight
+  - line-height
+  - text-align
+  - letter-spacing
+- Day 11 : Text styling & Box Model
+  - text-transform
+  - text-decoration
+  - word-spacing
+  - text-shadow
+  - white-spacing basics
+  - content
+  - padding
+  - border
+  - margin
+  - box model calculation
+- Day 12 : Box Sizing & Display
+  - box-sizing
+  - content-box
+  - border-box
+  - width/height behavior
+  - block
+  - inline
+  - inline-block
+  - none
+  - visibility
+- Day 13 : Position and z-index & Overflow
+  - static
+  - relative
+  - absolute
+  - flxed
+  - sticky
+  - z-index
+  - stacking basics
+  - overflow:hidden/auto/scroll
+  - position revision
+- Day 14 : Pseudo-classes & pseudo-Element
+  - hover
+  - focus
+  - active
+  - visited
+  - nth-child()
+  - first-child/last-child
+  - ::before
+  - ::after
+  - ::first-letter
+  - ::selection
+- Day 15 : Flexbox Basics
+  - display: flex
+  - flex container
+  - main axis
+  - cross axis
+  - flex-direction
+- Day 16 : Flexbox Alignment & Flexbox Properties
+  - justify-content
+  - align-items
+  - align-content
+  - gap
+  - flex-direction
+  - flex-wrap
+  - gap
+  - row/column layouts
+- Day 17 : Flexbox items & Flexbox Project
+  - flex-grow
+  - flex-shink
+  - flex-basis
+  - order
+  - align-self
+  - navbar
+  - hero section
+  - cards
+  - footer
+  - responsive flex layout
+- Day 18 : CSS Grid Basics & Grid Layout
+  - display:grid
+  - grid columns
+  - grid rows
+  - gap
+  - grid-template-columns
+  - grid-template-rows
+  - fr unit
+  - repeat()
+- Day 19 : Grid Positioning & Advanced Grid
+  - grid-column
+  - grid-row
+  - span
+  - grid-area bascis
+  - minmax()
+  - auto-fit
+  - auto-fill
+  - responsive grids
+- Day 20 : Responsive Design & Responsive Layout
+  - media queries
+  - mobile-first approach
+  - breakpoints
+  - flexible widths
+  - responsive images
+  - flexible containers
+  - responsive typography
+  - navbar adaptation
+- Day 21 : Transitions, Transforms & CSS Animations
+  - transition
+  - transform
+  - scale
+  - rotate
+  - translate
+  - @keyframes
+  - animation-duration
+  - delay
+  - iteration-count
+  - timing basics
+- Day 22 : CSS Completed
+  - Brew House
+- Day 23 :
+  - Introduction to Javascript
+  - variables
+  - datatype & object
+- Day 24 : Conditional & Loops
+  - if
+  - else if
+  - else if ladder
+  - while
+  - do while
+  - for
+  - for in
+  - for of
+- Day 25
+  - Functions
+  - Strings in Javascript
+- Day 26
+  - Array
+- Day 27 : Document Object Model
+- Day 28 :
+  - Selecting by ID's Classes and more
+  - Inserting and Removing element using JS
+- Day 29 :
+  - Event
+  - Event Bubbling
+  - Set Interval
+  - Set Timeout in Javascript
+- Day 30 :
+  - Asyne/Await
+  - Fetch API in JS
+- Day 31 :
+  - Try-Catch
+  - Throw
+  - Finally in JS
+- Day 32 :
+  - Classes & Objects in javascript
+- Day 33 : Advance Javascript
+  - Spread Operator
+  - Destructuring
+  - IIFE (Immediately Invoked Function Expression)
+  - Spread syntax
+  - Local global & block scopes
+  - Hoisting
+  - Hoisting with let and var
+- Day 34 :
+  - Common.js
+  -  Ecmascript module
+- Day 35 :
+  - working with files : fs and path modules.
+- Day 36 : Introduction to Express.js
+  - Express.js Basics
+  - Server & Routes
+  - Request & Response
+- Day 37 :
+  - Response, Request and Routers in Express.
+- Day 38 :
+  - Middleware in Express.js
+- Day 39 :
+  - ejs Template engine in Express.js
+- Day 40 :
+  - Introduction to mongoDB
+  - CRUD operation in mongoDB
+- Day 41 :
+  - Insalling Mongoose & using it with Express.js
+- Day 42 :
+  - Tailwind CSS
+- Day 43 :
+  - Introduction to React 
+## Goal
+I am learning Web Developement from basics and uploading my daily practice projects on Github.
+Happy coding!
