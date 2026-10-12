@@ -222,7 +222,9 @@ My daily  progress and projects in Web development.
 - Day 42 :
   - Tailwind CSS
 - Day 43 :
-  - Introduction to React 
+  - Introduction to React
+- Day 44 :
+  - Components propst and jsx 
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
