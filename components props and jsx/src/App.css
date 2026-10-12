@@ -1,0 +1,24 @@
+.container{
+  text-align: center;
+  padding: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card{
+  width: 200px;
+  padding: 20px;
+  border-radius: 12px;
+  background: #f0f4ff;
+  box-shadow: 0 4px 10px #00000015;
+}
+.card h2{
+  color:#4f46e5
+}
+.card p{
+  color:#444;
+}
