@@ -1,7 +1,5 @@
 # Web-development-journey
 My daily  progress and projects in Web development.
-# React + Vite
-
 ## progress
 - Day 1 : Created a simple Web page.
 - Day 2 : Learned Markdown basics, including text formatting, links and ordered/unordered list.
