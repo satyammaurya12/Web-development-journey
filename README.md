@@ -224,7 +224,9 @@ My daily  progress and projects in Web development.
 - Day 44 :
   - Components propst and jsx
 - Day 45 :
-  - Hooks & State in reacts
+  - Hooks & State in react
+- Day 46 :
+  - The useeffect hook in react
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
