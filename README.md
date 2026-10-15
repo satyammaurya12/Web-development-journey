@@ -227,6 +227,8 @@ My daily  progress and projects in Web development.
   - Hooks & State in react
 - Day 46 :
   - The useeffect hook in react
+- Day 47 :
+  - useRef hook in react
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
