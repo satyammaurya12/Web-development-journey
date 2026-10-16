@@ -229,6 +229,8 @@ My daily  progress and projects in Web development.
   - The useeffect hook in react
 - Day 47 :
   - useRef hook in react
+- Day 48 :
+  - Conditional rendering & Rendering List in React.
 ## Goal
 I am learning Web Developement from basics and uploading my daily practice projects on Github.
 Happy coding!
